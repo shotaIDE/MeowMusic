@@ -62,7 +62,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   freezed: 2.5.2
-  json_serializable: 6.9.0
+  json_serializable: 6.9.2
   mocktail: 1.0.4
   pedantic_mono: 1.29.0
   watcher: 1.1.1
