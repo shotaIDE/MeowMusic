@@ -48,7 +48,7 @@ imageio==2.36.1
 importlib_metadata==8.5.0
 iniconfig==2.0.0
 itsdangerous==2.2.0
-jax==0.4.35
+jax==0.4.38
 jaxlib==0.4.35
 Jinja2==3.1.5
 joblib==1.4.2
