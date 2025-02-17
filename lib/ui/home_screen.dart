@@ -105,9 +105,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 return AlertDialog(
                   content: Column(
                     mainAxisSize: MainAxisSize.min,
+                    spacing: 16,
                     children: [
                       text,
-                      const SizedBox(height: 16),
                       CheckboxListTile(
                         value: requestedDoNotShowAgain,
                         onChanged: (value) {

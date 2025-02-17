@@ -144,9 +144,9 @@ class _SelectTemplateState extends ConsumerState<SelectTemplateScreen> {
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                spacing: 4,
                                 children: [
                                   title,
-                                  const SizedBox(height: 4),
                                   subtitle,
                                 ],
                               ),
@@ -181,12 +181,12 @@ class _SelectTemplateState extends ConsumerState<SelectTemplateScreen> {
         bottom: MediaQuery.of(context).viewPadding.bottom,
       ),
       child: Column(
+        spacing: 32,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: description,
           ),
-          const SizedBox(height: 32),
           list,
         ],
       ),

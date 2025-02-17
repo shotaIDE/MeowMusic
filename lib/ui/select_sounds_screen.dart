@@ -215,11 +215,10 @@ class _SelectTemplateState extends ConsumerState<SelectSoundsScreen> {
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 32,
         children: [
           templateTile,
-          const SizedBox(height: 32),
           description,
-          const SizedBox(height: 32),
           soundsList,
         ],
       ),
@@ -274,9 +273,10 @@ class _SelectTemplateState extends ConsumerState<SelectSoundsScreen> {
               scaffold,
               Container(
                 alignment: Alignment.center,
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
+                  spacing: 16,
                   children: [
                     Text(
                       AppLocalizations.of(context)!.selectingVideo,
@@ -285,10 +285,7 @@ class _SelectTemplateState extends ConsumerState<SelectSoundsScreen> {
                           .titleLarge!
                           .copyWith(color: Colors.white),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: LinearProgressIndicator(),
-                    ),
+                    const LinearProgressIndicator(),
                   ],
                 ),
               ),

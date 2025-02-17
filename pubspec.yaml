@@ -12,7 +12,7 @@ dependencies:
   audioplayers: 6.1.2
   chewie: 1.10.0
   cloud_firestore: 5.6.3
-  collection: 1.18.0
+  collection: 1.19.0
   cross_file: 0.3.4+2
   cupertino_icons: 1.0.8
   device_info_plus: 11.3.0
@@ -39,7 +39,7 @@ dependencies:
   in_app_review: 2.0.10
   intl: 0.20.1
   package_info_plus: 8.2.1
-  path: 1.9.0
+  path: 1.9.1
   path_provider: 2.1.5
   purchases_flutter: 8.4.6
   rxdart: 0.28.0
@@ -48,13 +48,13 @@ dependencies:
   skeletonizer: 1.4.3
   url_launcher: 6.3.1
   video_player: 2.9.2
-  video_thumbnail: 0.5.3
-  video_trimmer: 3.0.1
+  video_trimmer: 4.0.2
 
 dependency_overrides:
-  # Workaround until video_trimmer update
-  # https://github.com/sbis04/video_trimmer/issues/232#issuecomment-2135007897
+  # Workaround until Flutter SDK update to adopt video_trimmer's dependencies.
+  # https://github.com/sbis04/video_trimmer/blob/4a369390303586fef7408048f536e5151be7569f/pubspec.yaml#L16-L17
   intl: 0.19.0
+  path: 1.9.0
 
 dev_dependencies:
   build_runner: 2.4.13

@@ -120,9 +120,9 @@ class _SetPieceTitleState extends ConsumerState<SetPieceTitleScreen> {
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 32,
         children: [
           thumbnail,
-          const SizedBox(height: 32),
           displayNameInput,
         ],
       ),
@@ -188,9 +188,10 @@ class _SetPieceTitleState extends ConsumerState<SetPieceTitleScreen> {
               gestureDetectorWrappedScaffold,
               Container(
                 alignment: Alignment.center,
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
+                  spacing: 16,
                   children: [
                     Text(
                       AppLocalizations.of(context)!.submitting,
@@ -199,10 +200,7 @@ class _SetPieceTitleState extends ConsumerState<SetPieceTitleScreen> {
                           .titleLarge!
                           .copyWith(color: Colors.white),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: LinearProgressIndicator(),
-                    ),
+                    const LinearProgressIndicator(),
                   ],
                 ),
               ),

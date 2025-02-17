@@ -93,11 +93,10 @@ class _SelectTemplateState extends ConsumerState<CompletedToSubmitScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          spacing: 32,
           children: [
             const _Description(),
-            const SizedBox(height: 32),
             completeImmediatelyButton,
-            const SizedBox(height: 32),
             const ListeningMusicCatImage(),
           ],
         ),

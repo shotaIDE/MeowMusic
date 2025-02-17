@@ -158,9 +158,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               scaffold,
               Container(
                 alignment: Alignment.center,
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
+                  spacing: 16,
                   children: [
                     Text(
                       AppLocalizations.of(context)!.deletingAccount,
@@ -169,10 +170,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                           .titleLarge!
                           .copyWith(color: Colors.white),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: LinearProgressIndicator(),
-                    ),
+                    const LinearProgressIndicator(),
                   ],
                 ),
               ),

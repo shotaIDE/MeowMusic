@@ -56,9 +56,9 @@ class _LinkWithAccountScreenState extends ConsumerState<LinkWithAccountScreen> {
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 16,
         children: [
           continueWithGoogleButton,
-          const SizedBox(height: 16),
           continueWithAppleButton,
         ],
       ),
@@ -74,9 +74,9 @@ class _LinkWithAccountScreenState extends ConsumerState<LinkWithAccountScreen> {
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          spacing: 32,
           children: [
             description,
-            const SizedBox(height: 32),
             buttonsPanel,
           ],
         ),
@@ -115,7 +115,7 @@ class _LinkWithAccountScreenState extends ConsumerState<LinkWithAccountScreen> {
             children: [
               scaffold,
               ColoredBox(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: const Center(
                   child: CircularProgressIndicator(),
                 ),

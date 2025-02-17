@@ -70,9 +70,9 @@ class _HomeScreenState extends ConsumerState<LoginScreen> {
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 16,
         children: [
           continueWithGoogleButton,
-          const SizedBox(height: 16),
           continueWithAppleButton,
         ],
       ),
@@ -102,13 +102,11 @@ class _HomeScreenState extends ConsumerState<LoginScreen> {
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          spacing: 16,
           children: [
             descriptionText,
-            const SizedBox(height: 32),
             buttonsPanel,
-            const SizedBox(height: 32),
             toggleModelButton,
-            const SizedBox(height: 32),
             continueWithoutLoginButton,
           ],
         ),
@@ -119,6 +117,7 @@ class _HomeScreenState extends ConsumerState<LoginScreen> {
       body: Stack(
         children: [
           Column(
+            spacing: 16,
             children: [
               SafeArea(
                 bottom: false,
@@ -127,7 +126,6 @@ class _HomeScreenState extends ConsumerState<LoginScreen> {
                   child: titleText,
                 ),
               ),
-              const SizedBox(height: 16),
               Expanded(
                 child: SafeArea(
                   top: false,
@@ -155,7 +153,7 @@ class _HomeScreenState extends ConsumerState<LoginScreen> {
             children: [
               scaffold,
               ColoredBox(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: const Center(
                   child: CircularProgressIndicator(),
                 ),

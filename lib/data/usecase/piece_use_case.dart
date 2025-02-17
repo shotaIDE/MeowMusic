@@ -100,7 +100,7 @@ final piecesProvider = FutureProvider(
       ),
     );
 
-    final sorted = converted.whereNotNull().sorted(
+    final sorted = converted.nonNulls.sorted(
       (a, b) {
         final dateTimeA = a.map(
           generating: (generating) => generating.submittedAt,

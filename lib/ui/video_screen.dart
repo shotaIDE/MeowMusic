@@ -23,7 +23,7 @@ class VideoScreen extends ConsumerStatefulWidget {
   VideoScreen({
     required PieceGenerated piece,
     super.key,
-  })  : viewModel = _videoViewModelProvider(piece);
+  }) : viewModel = _videoViewModelProvider(piece);
 
   static const name = 'VideoScreen';
 
@@ -87,7 +87,7 @@ class _VideoScreenState extends ConsumerState<VideoScreen> {
             children: [
               scaffold,
               ColoredBox(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: const Center(
                   child: CircularProgressIndicator(),
                 ),

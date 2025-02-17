@@ -205,7 +205,7 @@ class _JoinPremiumPlanScreenState extends ConsumerState<JoinPremiumPlanScreen> {
               scaffold,
               Container(
                 alignment: Alignment.center,
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: const LinearProgressIndicator(),
               ),
             ],
@@ -232,12 +232,12 @@ class _RoundedDescriptionListTile extends StatelessWidget {
     final titleAndDescription = Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
+      spacing: 8,
       children: [
         DefaultTextStyle.merge(
           style: Theme.of(context).textTheme.bodyMedium,
           child: title,
         ),
-        const SizedBox(height: 8),
         DefaultTextStyle.merge(
           style: Theme.of(context).textTheme.bodySmall,
           child: description,

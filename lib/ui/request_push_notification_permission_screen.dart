@@ -72,12 +72,10 @@ class _SelectTemplateState
       padding: const EdgeInsets.all(16),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 32,
         children: [
           description,
-          Padding(
-            padding: const EdgeInsets.only(top: 32),
-            child: notificationImage,
-          ),
+          notificationImage,
         ],
       ),
     );
@@ -96,9 +94,9 @@ class _SelectTemplateState
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        spacing: 16,
         children: [
           requestPermissionAndSubmitButton,
-          const SizedBox(height: 16),
           submitButton,
         ],
       ),
@@ -145,9 +143,10 @@ class _SelectTemplateState
               scaffold,
               Container(
                 alignment: Alignment.center,
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withAlpha(128),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
+                  spacing: 16,
                   children: [
                     Text(
                       AppLocalizations.of(context)!.submitting,
@@ -156,10 +155,7 @@ class _SelectTemplateState
                           .titleLarge!
                           .copyWith(color: Colors.white),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: LinearProgressIndicator(),
-                    ),
+                    const LinearProgressIndicator(),
                   ],
                 ),
               ),
