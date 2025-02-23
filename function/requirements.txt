@@ -109,7 +109,7 @@ six==1.17.0
 sortedcollections==2.1.0
 sortedcontainers==2.4.0
 soundfile==0.13.1
-tensorboard==2.18.0
+tensorboard==2.19.0
 tensorboard-data-server==0.7.2
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.18.0
